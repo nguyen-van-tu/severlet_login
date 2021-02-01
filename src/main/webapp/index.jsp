@@ -1,18 +1,25 @@
 
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-  <title>Chuyển đổi tiền tệ</title>
-</head>
+<style type="text/css">
+  .login {
+    height:180px; width:230px;
+    margin:0;
+    padding:10px;
+    border:1px #CCC solid;
+  }
+  .login input {
+    padding:5px; margin:5px
+  }
+</style>
 <body>
-<h2>Chuyên đổi tiền tệ</h2>
-<form method="post" action="/host">
-  <label>Rate:</label><br/>
-  <input type="text" name="rate" placeholder="RATE" value="23000"/><br/>
-  <label>USD:</label><br/>
-  <input type="text" name="usd" placeholder="USD" value="0"><br/>
-  <input type="submit" id="submit" value="Converter"/>
+<form method="post" action="/home">
+  <div class="login">
+    <h2>Login</h2>
+    <input type="text" name="username" size="30"  placeholder="username" />
+    <input type="password" name="password" size="30" placeholder="password" />
+    <input type="submit" value="Sign in"/>
+  </div>
 </form>
 </body>
 </html>
